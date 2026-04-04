@@ -1,0 +1,271 @@
+/* ─── Tools Page Styles ─────────────────────────────────────────── */
+
+.tools-header {
+  margin-bottom: 32px;
+}
+
+.tools-intro {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 600px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Category sections */
+.tools-category {
+  margin-bottom: 42px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--accent-light);
+  padding-left: 14px;
+}
+
+.category-header i {
+  color: var(--accent-light);
+  font-size: 20px;
+}
+
+.category-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.category-badge {
+  background-color: rgba(139, 92, 246, 0.15);
+  color: var(--accent-light);
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
+}
+
+/* Tool grid (similar to stack but enhanced) */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.tool-card {
+  background-color: rgb(29, 29, 29);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.tool-card:hover {
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.tool-card i {
+  font-size: 24px;
+  color: var(--accent-light);
+  width: 32px;
+  text-align: center;
+}
+
+
+.tool-card .level-badge {
+  margin-left: auto;
+  font-size: 9px;
+  background-color: rgba(139, 92, 246, 0.2);
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--accent-light);
+  font-weight: normal;
+  align-items: center;
+  display: flex;
+}
+
+/* Learning tag (reuse from general but adjust) */
+.tool-card.learning {
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.tool-card .learning-tag {
+  position: static;
+  margin-left: auto;
+  background-color: var(--accent-dark);
+  font-size: 9px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--accent-light);
+}
+
+/* For the "Daily Drivers" variant with tool-info */
+.tool-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tool-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tool-proficiency {
+  font-size: 10px;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Environment card */
+.env-card {
+  background-color: rgb(29, 29, 29);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: var(--border-radius);
+  padding: 18px 22px;
+}
+
+.env-card p {
+  margin: 8px 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.env-card i {
+  width: 24px;
+  color: var(--accent-light);
+}
+
+/* Learning roadmap section */
+.learning-roadmap {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(139, 92, 246, 0.01));
+  border-radius: var(--border-radius);
+  padding: 20px 24px;
+  margin: 32px 0;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.learning-roadmap .category-title {
+  border-left: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.roadmap-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.roadmap-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.roadmap-item i {
+  font-size: 28px;
+  color: var(--accent-light);
+  width: 40px;
+  text-align: center;
+}
+
+.roadmap-info {
+  flex: 1;
+}
+
+.roadmap-info span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--text-light);
+}
+
+.progress-bar {
+  background-color: rgba(139, 92, 246, 0.2);
+  border-radius: 999px;
+  height: 6px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: var(--accent-light);
+  height: 100%;
+  border-radius: 999px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Quote */
+.tools-quote {
+  margin-top: 48px;
+  padding: 20px 24px;
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.tools-quote i {
+  color: var(--accent-light);
+  font-size: 20px;
+  margin-right: 8px;
+  opacity: 0.6;
+}
+
+.tools-quote p {
+  display: inline;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .tool-card {
+    padding: 10px 12px;
+  }
+
+  .tool-card i {
+    font-size: 20px;
+    width: 28px;
+  }
+
+  .env-card p {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .roadmap-item {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category-title {
+    font-size: 18px;
+  }
+
+  .learning-roadmap {
+    padding: 16px;
+  }
+}

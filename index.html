@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -21,12 +21,12 @@
       <nav class="navbar">
         <div class="nav-links">
           <ul>
-            <li class="active"><i class="fa-solid fa-house"></i><span class="tooltip">Home</span></li>
-            <li><i class="fa-solid fa-diagram-project"></i><span class="tooltip">Projects</span></li>
-            <li><i class="fa-solid fa-wrench"></i><span class="tooltip">Tools</span></li>
-            <li><i class="fa-solid fa-briefcase"></i><span class="tooltip">Experience</span></li>
-            <li><i class="fa-solid fa-pen"></i><span class="tooltip">Thoughts</span></li>
-            <li><i class="fa-solid fa-envelope"></i><span class="tooltip">Contact</span></li>
+            <li class="active"><a class="fa-solid fa-house"></a><span class="tooltip">Home</span></li>
+            <li><a href="/pages/projects.html" class="fa-solid fa-diagram-project"></a><span class="tooltip">Projects</span></li>
+            <li><a href="/pages/tools.html" class="fa-solid fa-wrench"></a><span class="tooltip">Tools</span></li>
+            <li><a href="/pages/experience.html" class="fa-solid fa-briefcase"></a><span class="tooltip">Experience</span></li>
+            <li><a href="/pages/thoughts.html" class="fa-solid fa-pen"></a><span class="tooltip">Thoughts</span></li>
+            <li><a href="/pages/contact.html" class="fa-solid fa-envelope"></a><span class="tooltip">Contact</span></li>
           </ul>
         </div>
       </nav>
@@ -41,7 +41,7 @@
           <h1 class="name">Marco Felipe Naya</h1>
           <p class="description">Software Engineer | Tech Maniac | Worldbuilder</p>
           <p><i class="fa-solid fa-location-dot"></i> São Paulo, Brasil</p>
-          <a href="#contact" class="btn-primary">Talk to me</a>
+          <a href="/pages/contact.html" class="btn-primary">Talk to me</a>
           <div class="social-links">
             <a href="https://github.com/MarcoFelipeNaya"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/marco-felipe-15946431b/"><i class="fa-brands fa-linkedin"></i></a>
@@ -69,7 +69,7 @@
         <section class="projects-preview">
           <div class="section-header">
             <h2 class="section-title">Featured Projects</h2>
-            <a href="/projects" class="see-all">See all <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/pages/projects.html" class="see-all">See all <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
           <div class="projects-grid">
@@ -141,7 +141,7 @@
         <section class="experience">
           <div class="section-header">
             <h2 class="section-title">Experience</h2>
-            <a href="/experience" class="see-all">See all <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="pages/experience.html" class="see-all">See all <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
           <div class="timeline">
@@ -187,32 +187,9 @@
         <section class="thoughts-preview">
           <div class="section-header">
             <h2 class="section-title">Latest Thoughts</h2>
-            <a href="/thoughts" class="see-all">See all <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/pages/thoughts.html" class="see-all">See all <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-
-          <div class="thoughts-grid">
-
-            <a href="#" class="thought-card">
-              <div class="thought-meta">
-                <span class="thought-tag">Tech</span>
-                <span class="thought-date">Mar 2025</span>
-              </div>
-              <h3 class="thought-title">Lorem ipsum</h3>
-              <p class="thought-excerpt">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical...</p>
-              <span class="thought-read">Read more <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-            <a href="#" class="thought-card">
-              <div class="thought-meta">
-                <span class="thought-tag">Opinion</span>
-                <span class="thought-date">Feb 2025</span>
-              </div>
-              <h3 class="thought-title">Lorem ipsum</h3>
-              <p class="thought-excerpt">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical...</p>
-              <span class="thought-read">Read more <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-          </div>
+          <div class="thoughts-grid" id="latestThoughtsGrid"></div>
         </section>
 
 
@@ -239,7 +216,7 @@
 
   </div>
 </footer>
-
+    <script src="/scripts/blog-data.js"></script>
     <script src="/scripts/home.js"></script>
   </div>
 </body>
