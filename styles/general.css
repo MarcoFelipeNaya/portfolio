@@ -8,6 +8,20 @@
     --card-bg: rgba(30, 41, 59, 0.7);
     --border-radius: 10px;
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --body-bg: rgb(12, 11, 11);
+    --noise-opacity: 0.08;
+}
+:root.light {
+    --primary-dark: #f8fafc;
+    --secondary-dark: #ffffff;
+    --accent-light: #8b5cf6;
+    --accent-dark: #ede9fe;
+    --text-light: #1e293b;
+    --text-muted: #64748b;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --body-bg: #f1f5f9;
+    --noise-opacity: 0.03;
 }
 
 /* ─── Base ─────────────────────────────────────── */
@@ -16,8 +30,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-light);
     line-height: 1.6;
-    background-color: rgb(12, 11, 11);
-}
+    background-color: var(--body-bg);}
 
 body::before {
     content: "";
@@ -499,7 +512,7 @@ header {
   height: 12px;
   border-radius: 50%;
   background-color: var(--accent-light);
-  border: 2px solid rgb(12, 11, 11);
+  border: 2px solid var(--body-bg);
   box-shadow: 0 0 8px var(--accent-light);
   flex-shrink: 0;
 }
@@ -696,6 +709,157 @@ header {
   font-size: 11px;
 }
 
+.theme-toggle {
+  background: var(--card-bg);
+  color: var(--text-light);
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+.theme-toggle:hover {
+  background: var(--accent-light);
+  color: white;
+}
+/* ─── Light Mode Card Overrides ─────────────────────────────────── */
+:root.light .photocard,
+:root.light .project-card,
+:root.light .blog-card,
+:root.light .tool-card,
+:root.light .exp-body,
+:root.light .edu-card,
+:root.light .thought-card,
+:root.light .featured-project,
+:root.light .env-card,
+:root.light .navbar,
+:root.light .stack-card,
+:root.light .modal-content {
+  background-color: #ffffff;
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Remove backdrop blur from photocard in light mode for cleaner look */
+:root.light .photocard {
+  backdrop-filter: none;
+}
+
+/* Adjust text colors for better contrast in light mode */
+:root.light .project-desc,
+:root.light .card-excerpt,
+:root.light .timeline-desc,
+:root.light .exp-description p,
+:root.light .exp-description li,
+:root.light .tools-intro,
+:root.light .thoughts-intro,
+:root.light .hero-bio,
+:root.light .hero-title,
+:root.light .timeline-company,
+:root.light .company,
+:root.light .footer-sub,
+:root.light .footer-quote-meta {
+  color: #475569;
+}
+
+:root.light .project-name,
+:root.light .card-title,
+:root.light .timeline-role,
+:root.light .role,
+:root.light .category-title,
+:root.light .thought-title,
+:root.light .hero-name,
+:root.light .section-title,
+:root.light .featured-name,
+:root.light .modal-body h2,
+:root.light .modal-body h3 {
+  color: #0f172a;
+}
+
+:root.light .project-tags span,
+:root.light .timeline-tags span,
+:root.light .tech-tags span,
+:root.light .card-tag,
+:root.light .modal-tag,
+:root.light .category-badge,
+:root.light .date-badge {
+  background-color: #ede9fe;
+  color: #6d28d9;
+}
+
+:root.light .stack-card i,
+:root.light .tool-card i,
+:root.light .env-card i,
+:root.light .project-top > i,
+:root.light .category-header i,
+:root.light .timeline-dot,
+:root.light .exp-dot {
+  color: var(--accent-light); /* keep purple accent */
+}
+
+:root.light .footer {
+  border-top-color: rgba(139, 92, 246, 0.3);
+}
+
+:root.light .timeline,
+:root.light .exp-header {
+  border-color: rgba(139, 92, 246, 0.3);
+}
+/* ─── Light Mode Nav & Tooltip Fixes ────────────────────────────── */
+:root.light .nav-links li a {
+  color: #1e293b;  /* dark color for visibility in light mode */
+}
+
+:root.light .nav-links li:hover a,
+:root.light .nav-links li.active a {
+  color: #ffffff;  /* white text when background is purple */
+}
+
+:root.light .tooltip {
+  color: #1e293b;
+  background-color: #ffffff;
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* ─── Light Mode Status Badge ───────────────────────────────────── */
+:root.light .status-badge {
+  background-color: #f1f5f9;      /* light gray background */
+  border-color: rgba(139, 92, 246, 0.4);
+  color: #1e293b;                 /* dark text for contrast */
+}
+
+:root.light .status-dot {
+  background-color: #22c55e;      /* keep green dot visible */
+  box-shadow: 0 0 6px #22c55e;
+}
+
+/* ─── Light Mode Contact Form ───────────────────────────────────── */
+:root.light .form input,
+:root.light .form textarea {
+  background-color: #ffffff;
+  border-color: rgba(139, 92, 246, 0.3);
+  color: #1e293b;
+}
+
+:root.light .form input::placeholder,
+:root.light .form textarea::placeholder {
+  color: #94a3b8;
+}
+
+:root.light .form input:focus,
+:root.light .form textarea:focus {
+  border-color: var(--accent-light);
+}
+
+:root.light .form-group label {
+  color: #475569;
+}
+
+:root.light .form button {
+  background-color: var(--accent-light);
+  color: #ffffff;
+}
 /* ─── Responsive Design ─────────────────────────── */
 
 /* Large screens (1400px+) — content stays centered */
