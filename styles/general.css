@@ -47,6 +47,7 @@ body::before {
 h1, h2, h3 {
     font-family: 'Space Grotesk', sans-serif;
 }
+
 .accent {
     color: var(--accent-light);
 }
@@ -175,6 +176,11 @@ header {
     position: sticky;
     top: 20px;
 }
+
+.name{
+  font-size: 31px;
+}
+
 
 .profile-pic {
     width: 250px;
