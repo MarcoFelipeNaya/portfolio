@@ -8,6 +8,7 @@
   padding: 28px;
   max-width: 680px;
   transition: border-color 0.2s ease;
+  margin-top: 15px;
 }
 
 .featured-project:hover {
@@ -59,4 +60,39 @@ a.textref {
   text-decoration: none;
   display: inline-block; 
   word-break: break-all;
+}
+
+hr {
+  border: none;
+  border-top: var(--text-muted) 1px solid;
+  margin: 24px 0;
+}
+
+/* Lightbox */
+.featured-image img {
+  cursor: zoom-in;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: var(--border-radius);
+  object-fit: contain;
+  cursor: zoom-out;
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
 }

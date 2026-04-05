@@ -40,4 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
       thoughtsGrid.appendChild(card);
     });
   }
+
+  document.querySelectorAll('.project-card[data-href]').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return; // let inner links still work normally
+      window.location.href = card.dataset.href;
+    });
+  });
+
 });

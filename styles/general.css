@@ -474,7 +474,12 @@ header {
   padding: 3px 10px;
   border-radius: 999px;
 }
-
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+/* temp WIP badge use <span class="wip-badge"></span> */
 .wip-badge {
   font-size: 10px;
   padding: 2px 8px;
