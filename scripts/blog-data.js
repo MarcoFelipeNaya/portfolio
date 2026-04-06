@@ -27,13 +27,15 @@ const blogPosts = [
   {
     id: 2,
     title: "From Marketing to Code: My Unconventional Path",
-    date: "Feb 28, 2026",
+    date: "Mar 29, 2026",
     readTime: "7 min read",
     tag: "Career",
     content: `
-      When I was a Marketing Analyst, I spent hours wrangling spreadsheets, building dashboards, and trying to automate the boring stuff. I taught myself Excel VBA, then SQL, then Python. Before I knew it, I was solving problems that looked a lot like software engineering.
+      During university, I had the opportunity to work for the institution itself. At the time, this made sense primarily to help cover tuition costs. In addition to allowing me to study without financial worries, it gave me valuable exposure to how a company operates on a daily basis. Shortly thereafter, I was promoted to call center supervisor, still within the university, which taught me a great deal about leadership, people development, and empathy toward those I led.
 
-      The transition wasn't overnight. I took courses, built small tools for my team, and eventually realized that I enjoyed building the systems more than analyzing the reports.
+        During this period, I built a strong network, which led to my next role as a Marketing Analyst. Even after completing my degree in Systems Analysis and Development, I chose to remain in marketing, as I was already in a good position. However, more times than I can count, I had always wanted to work with programming, and whenever possible, I brought that interest into my daily work.
+
+        So at the end of last year, I finally decided to close my marketing chapter and move into this long-awaited phase of my professional life. I do not consider my time in marketing wasted, far from it. Instead, I see how this background gives me an advantage that other programmers may not have.
 
       <strong>Skills that transferred:</strong>
       <ul>
