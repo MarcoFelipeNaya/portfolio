@@ -4,7 +4,7 @@ const blogPosts = [
   {
     id: 1,
     title: "Why I Build Things for Fun",
-    date: "Mar 15, 2025",
+    date: "Mar 15, 2026",
     readTime: "5 min read",
     tag: "Mindset",
     content: `
@@ -27,7 +27,7 @@ const blogPosts = [
   {
     id: 2,
     title: "From Marketing to Code: My Unconventional Path",
-    date: "Feb 28, 2025",
+    date: "Feb 28, 2026",
     readTime: "7 min read",
     tag: "Career",
     content: `
@@ -48,7 +48,7 @@ const blogPosts = [
   {
     id: 3,
     title: "My Favorite VS Code Extensions in 2025",
-    date: "Feb 10, 2025",
+    date: "Feb 10, 2026",
     readTime: "4 min read",
     tag: "Tools",
     content: `
