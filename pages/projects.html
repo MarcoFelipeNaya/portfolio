@@ -80,6 +80,7 @@
                 <span>JavaScript</span>
                 <span>HTML</span>
                 <span>CSS</span>
+                <span>Leaflet</span>
               </div>
             </div>
 
@@ -95,22 +96,22 @@
                 </div>
                 <div class="project-links">
                   <a href="https://github.com/MarcoFelipeNaya/vizion" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://vizion-theta.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
               </div>
 
-              <p class="featured-desc">Vizion is a full-stack Kanban-style project management app — my first end-to-end project connecting a real backend to a real frontend.
-                On the backend, I built a REST API with Node.js and Express, organized into three resource routers (boards, columns, cards) and connected to a MySQL database using a connection pool for efficiency. I learned how to structure routes, handle async/await with proper error handling, use environment variables with dotenv, and think about data relationships — like how cards belong to columns, which belong to boards, and how position ordering needs to stay in sync when you drag things around.
-                On the frontend, I used vanilla JavaScript — no frameworks — which forced me to really understand the DOM, state management, and the Fetch API. I implemented drag-and-drop natively using the HTML5 Drag and Drop API for both cards and columns, built a reusable modal system, and added a light/dark theme toggle that persists via localStorage.
-                Tech used: Node.js, Express, MySQL, Vanilla JS, HTML, CSS, Postman, Git.
-              </p>
+                <p class="featured-desc">Vizion is a full-stack Kanban-style project management app. My first end-to-end project connecting a real backend to a real frontend.
+                On the backend, I built a REST API with Node.js and Express, organized into resource routers (boards, columns, cards, auth) and connected to a MySQL database using a connection pool. I implemented JWT-based authentication with bcrypt password hashing, rate limiting on auth routes, input sanitization, and CORS restrictions, thinking through security from the start. I also learned how to structure routes, handle async/await with proper error handling, and think about data relationships, like how cards belong to columns, which belong to boards, and how position ordering needs to stay in sync when you drag things around.
+                On the frontend, I used vanilla JavaScript, no frameworks, which forced me to really understand the DOM, state management, and the Fetch API. I implemented drag-and-drop natively using the HTML5 Drag and Drop API for both cards and columns, built a reusable modal system, and added a light/dark theme toggle that persists via localStorage. Deployed on Railway (API) and Vercel (frontend).
+                </p>
                 <hr>
               <p class="featured-desc">
                 What's next:<br>
-                v1.1 — small but meaningful:
+                v1.1 - small but meaningful:
                 Due dates on cards, a card counter badge on the board list, and keyboard shortcut Esc to close modals.<br>
-                v2 — multi-user:
-                User authentication with JWT, multiple users per board, and search/filter cards.<br>
-                v3 — real-time & rich content:
+                v2 - collaboration:
+                Multiple users per board, shared workspaces, and board invitations.<br>
+                v3 - real-time & rich content:
                 Live sync with WebSockets, file attachments on cards, and an activity log.
               </p>
 
@@ -127,6 +128,8 @@
                 <span>Node.js</span>
                 <span>Express</span>
                 <span>MySQL</span>
+                <span>JWT</span>
+                <span>bcrypt</span>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Postman</span>
