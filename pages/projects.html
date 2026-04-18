@@ -138,6 +138,38 @@
             </div>
 
           </section>
+
+          <section class="projects" id="weather-todo">
+
+            <div class="featured-project">
+              <div class="featured-project-header">
+                <div>
+                  <h3 class="featured-name">Weather Todo</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/MarcoFelipeNaya/weather-todo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+
+                <p class="featured-desc">A task manager built with React that connects to live weather data and uses it to make your to-do list context-aware. React project, built step by step to learn the fundamentals properly rather than cargo-culting a tutorial.
+                On the React side, I built out the full component tree from scratch: AddTaskForm, TaskList, TaskItem, WeatherWidget, ForecastBar, learning how to lift state up, pass callbacks as props, and keep a single source of truth in the parent. Tasks persist across sessions using localStorage synced via useEffect, and I used a lazy initialiser in useState to load saved data efficiently on mount.
+                For the weather layer, I wrote a custom useWeather hook that fetches from the OpenWeatherMap API using either a city name or browser geolocation coordinates, running both the current conditions and 5-day forecast requests in parallel with Promise.all. The hybrid logic lives in a pure utility file that flags outdoor tasks with warnings and surfaces a banner when bad weather coincides with pending outdoor work.
+                Styled with Tailwind CSS v4 and Font Awesome icons. Working with a third-party API, environment variables, and thinking through how UI should respond to async state, loading skeletons, error messages, and conditional rendering throughout.</p>
+
+              <div class="featured-image">
+                <img src="/images/weather-todo-ss.png" alt="Project screenshot">
+              </div>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>Vite</span>
+                <span>Tailwind CSS</span>
+                <span>OpenWeatherMap API</span>
+              </div>
+            </div>
+
+          </section>
         </div>
       </div>
     </main>
